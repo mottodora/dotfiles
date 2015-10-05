@@ -14,11 +14,14 @@ path=(
     /usr/local/bin(N-/)
     $HOME/bin(N-/)
     /usr/local/sbin(N-/)
-    $PYENV_ROOT/bin(N-/)
+    #$PYENV_ROOT/bin(N-/)
     $path
 )
 FUEL_DATA_PATH=(
     $HOME/prog/ladder/data(N-/)
 )
 
-eval "$(pyenv init -)"
+if [ -d "${PYENV_ROOT}" ]; then
+    export PATH=${PYENV_ROOT}/bin:$PATH
+    eval "$(pyenv init -)"
+fi
