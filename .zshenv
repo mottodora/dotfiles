@@ -13,6 +13,7 @@ PYENV_ROOT=(
 path=(
     /usr/local/bin(N-/)
     $HOME/bin(N-/)
+    $HOME/local/bin(N-/)
     /usr/local/sbin(N-/)
     #$PYENV_ROOT/bin(N-/)
     $path

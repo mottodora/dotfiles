@@ -211,3 +211,5 @@ function tmux_automatically_attach_session()
     fi
 }
 tmux_automatically_attach_session
+
+PROMPT+='$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#D" | tr -d %) "$PWD")'
