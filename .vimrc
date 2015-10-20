@@ -36,9 +36,9 @@ NeoBundle 'croaker/mustang-vim'
 "
 
 " Markdown preview
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'kannokanno/previm'
-NeoBundle 'tyru/open-browser.vim'
+"NeoBundle 'plasticboy/vim-markdown'
+"NeoBundle 'kannokanno/previm'
+"NeoBundle 'tyru/open-browser.vim'
 
 call neobundle#end()
 " NeoBundleCheck を走らせ起動時に未インストールプラグインをインストールする
