@@ -10,7 +10,14 @@ PYENV_ROOT=(
     $HOME/.pyenv(N-/)
     $PYENV_ROOT
 )
-
+GOROOT=(
+    /usr/local/opt/go/libexec(N-/)
+    $GOROOT
+)
+GOPATH=(
+    $HOME/.go(N-/)
+    $GOPATH
+    )
 path=(
     $HOME/.rbenv/bin(N-/)
     /usr/local/bin(N-/)
