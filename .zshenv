@@ -39,6 +39,21 @@ SPARK_HOME=(
     $SPARK_HOME
 )
 
+if [ -d "${SPARK_HOME}" ]; then
+    alias spark-submit="${SPARK_HOME}/bin/spark-submit"
+    alias spark-shell="${SPARK_HOME}/bin/spark-shell"
+fi
+
+ADAM_HOME=(
+    $HOME/prog/tmp/adam(N-/)
+    $ADAM_HOME
+)
+
+if [ -d "${ADAM_HOME}" ]; then
+    alias adam-submit="${ADAM_HOME}/bin/adam-submit"
+    alias adam-shell="${ADAM_HOME}/bin/adam-shell"
+fi
+
 if [ -d "${PYENV_ROOT}" ]; then
     export PATH=${PYENV_ROOT}/bin:$PATH
     eval "$(pyenv init -)"
