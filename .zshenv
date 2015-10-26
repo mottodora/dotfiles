@@ -34,6 +34,10 @@ FUEL_DATA_PATH=(
 export GOPATH=$HOME
 export PATH=$PATH:$GOPATH/bin
 
+SPARK_HOME=(
+    $HOME/prog/tmp/spark-1.4.0-bin-hadoop2.6(N-/)
+    $SPARK_HOME
+)
 
 if [ -d "${PYENV_ROOT}" ]; then
     export PATH=${PYENV_ROOT}/bin:$PATH
