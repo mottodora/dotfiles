@@ -223,3 +223,5 @@ function peco-src () {
 }
 zle -N peco-src
 bindkey '^]' peco-src
+
+export BROWSER=chrome
