@@ -33,9 +33,6 @@ FUEL_DATA_PATH=(
 
 eval "$(pyenv init -)"
 
-export GOPATH=$HOME
-export PATH=$PATH:$GOPATH/bin
-
 SPARK_HOME=(
     $HOME/prog/tmp/spark-1.4.0-bin-hadoop2.6(N-/)
     $SPARK_HOME
