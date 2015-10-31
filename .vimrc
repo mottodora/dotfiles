@@ -40,6 +40,8 @@ NeoBundle 'croaker/mustang-vim'
 "NeoBundle 'kannokanno/previm'
 "NeoBundle 'tyru/open-browser.vim'
 "
+"Scala関連
+NeoBundle 'derekwyatt/vim-scala'
 " ensime
 NeoBundle 'ensime/ensime-vim'
 
