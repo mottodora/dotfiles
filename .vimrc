@@ -25,6 +25,7 @@ NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'nanotech/jellybeans.vim'
 NeoBundle 'davidhalter/jedi-vim'
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'zenorocha/dracula-theme', {'rtp' : 'vim'}
 " solarized
 NeoBundle 'altercation/vim-colors-solarized'
 " mustang
@@ -35,9 +36,9 @@ NeoBundle 'croaker/mustang-vim'
 "
 
 " Markdown preview
-NeoBundle 'plasticboy/vim-markdown'
-NeoBundle 'kannokanno/previm'
-NeoBundle 'tyru/open-browser.vim'
+"NeoBundle 'plasticboy/vim-markdown'
+"NeoBundle 'kannokanno/previm'
+"NeoBundle 'tyru/open-browser.vim'
 
 call neobundle#end()
 " NeoBundleCheck を走らせ起動時に未インストールプラグインをインストールする
@@ -51,9 +52,8 @@ filetype plugin indent on
 " 環境設定系
 " シンタックスハイライト
 "let g:hybrid_use_iTerm_colors = 1
-syntax enable
-set background=dark
-colorscheme solarized
+syntax on
+colorscheme dracula
 "let g:solarized_termtrans = 0
 " エンコード
 set encoding=utf8
@@ -158,7 +158,7 @@ nnoremap k gk
 vnoremap v $h
 
 " makrdown highlight
-au BufRead,BufNewFile *.md set filetype=markdown
+"au BufRead,BufNewFile *.md set filetype=markdown
 
 
 
