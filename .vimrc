@@ -39,6 +39,9 @@ NeoBundle 'croaker/mustang-vim'
 "NeoBundle 'plasticboy/vim-markdown'
 "NeoBundle 'kannokanno/previm'
 "NeoBundle 'tyru/open-browser.vim'
+"
+" ensime
+NeoBundle 'ensime/ensime-vim'
 
 call neobundle#end()
 " NeoBundleCheck を走らせ起動時に未インストールプラグインをインストールする
