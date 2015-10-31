@@ -11,6 +11,7 @@ PYENV_ROOT=(
     $PYENV_ROOT
 )
 path=(
+    $HOME/.rbenv/bin(N-/)
     /usr/local/bin(N-/)
     $HOME/bin(N-/)
     /usr/local/sbin(N-/)
@@ -22,3 +23,4 @@ FUEL_DATA_PATH=(
 )
 
 eval "$(pyenv init -)"
+eval "$(rbenv init -)"
