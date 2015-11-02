@@ -31,28 +31,16 @@ FUEL_DATA_PATH=(
     $HOME/prog/ladder/data(N-/)
 )
 
-export GOPATH=$HOME
-export PATH=$PATH:$GOPATH/bin
 
-SPARK_HOME=(
-    $HOME/prog/tmp/spark-1.4.0-bin-hadoop2.6(N-/)
-    $SPARK_HOME
-)
+export SPARK_HOME="$HOME/prog/tmp/spark-1.4.0-bin-hadoop2.6"
+export ADAM_HOME="$HOME/prog/tmp/adam"
+alias adam-submit="${ADAM_HOME}/bin/adam-submit"
+alias adam-shell="${ADAM_HOME}/bin/adam-shell"
 
-if [ -d "${SPARK_HOME}" ]; then
-    alias spark-submit="${SPARK_HOME}/bin/spark-submit"
-    alias spark-shell="${SPARK_HOME}/bin/spark-shell"
-fi
 
-ADAM_HOME=(
-    $HOME/prog/tmp/adam(N-/)
-    $ADAM_HOME
-)
 
-if [ -d "${ADAM_HOME}" ]; then
-    alias adam-submit="${ADAM_HOME}/bin/adam-submit"
-    alias adam-shell="${ADAM_HOME}/bin/adam-shell"
-fi
+#export GOPATH=$HOME
+#export PATH=$PATH:$GOPATH/bin
 
 if [ -d "${PYENV_ROOT}" ]; then
     export PATH=${PYENV_ROOT}/bin:$PATH
