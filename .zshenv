@@ -31,7 +31,6 @@ FUEL_DATA_PATH=(
     $HOME/prog/ladder/data(N-/)
 )
 
-=======
 eval "$(pyenv init -)"
 
 export SPARK_HOME="$HOME/prog/tmp/spark-1.4.0-bin-hadoop2.6"
